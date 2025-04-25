@@ -19,10 +19,10 @@ const images = {
 
 export const TextureSelector = () => {
   const [visible, setVisible] = useState(false);
-  const [activeTexture, setTexture] = useStore((state) => [
-    state?.texture,
-    state?.setTexture,
-  ]);
+
+  const activeTexture = useStore((state) => state.texture);
+  const setTexture = useStore((state) => state.setTexture);
+
   const { dirt, grass, glass, wood, log } = useKeyboard();
 
   useEffect(() => {
@@ -42,13 +42,9 @@ export const TextureSelector = () => {
   }, [setTexture, dirt, grass, glass, wood, log]);
 
   useEffect(() => {
-    const visibilityTimeout = setTimeout(() => {
-      setVisible(false);
-    }, 2000);
     setVisible(true);
-    return () => {
-      clearTimeout(visibilityTimeout);
-    };
+    const timeout = setTimeout(() => setVisible(false), 2000);
+    return () => clearTimeout(timeout);
   }, [activeTexture]);
 
   return (

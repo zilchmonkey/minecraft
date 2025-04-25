@@ -51,7 +51,8 @@ export const useStore = create<Store>((set) => ({
   },
   saveWorld: () => {
     set((prev) => {
-      setLocalStorage("cubes", prev.cubes);
+      const cubes = prev.cubes;
+      queueMicrotask(() => setLocalStorage("cubes", cubes));
       return prev;
     });
   },
