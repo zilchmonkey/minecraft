@@ -29,7 +29,7 @@ To run this prototype locally, follow these steps:
 2. **Navigate to the project directory:**
 
    ```bash
-   cd minecraft-prototype
+   cd minecraft
    ```
 
 3. **Install the dependencies:**
