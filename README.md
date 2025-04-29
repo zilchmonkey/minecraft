@@ -57,7 +57,7 @@ Once the game is running in your browser, you can interact with the environment 
   - **S** - Move backward
   - **D** - Move right
 
-- Press **1**, **2**, **3**, or **4** to select different types of blocks to place.
+- Press **1**, **2**, **3**, **4**, or **5** to select different types of blocks to place.
 
 - Move the mouse to look around the environment.
 
@@ -86,4 +86,4 @@ There a no future plans.
 
 Currently, this prototype is designed for desktop use only. Maybe later in the future I will add touch controls for mobile devices.
 
-Thank you for checking out this Prototype!
+Thank you!
