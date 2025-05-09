@@ -84,6 +84,6 @@ Once the game is running in your browser, you can interact with the environment 
 
 There a no future plans.
 
-Currently, this prototype is designed for desktop use only. Maybe later in the future I will add touch controls for mobile devices.
+Currently, this prototype is designed for desktop use only.
 
 Thank you!
